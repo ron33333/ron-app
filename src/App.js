@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Avatar from "./Components/Avatar";
 
 function App() {
+  const URL='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Avatar url={URL}/>
+   </div>
   );
 }
+
 
 export default App;
